@@ -185,7 +185,7 @@ PS1="\n${RED}┌─[${YELLOW}ANOS${RED}]─[${MAGENTA}TERMUX${RED}]─[${CYAN}\w
 # Disable sebagian besar command dengan pesan yang lebih interaktif
 disable_commands() {
     # List command yang diizinkan
-    allowed_commands=('fesnuk' 'exit' 'clear' 'bantuan' 'anos' 'nano' 'echo' 'rm' 'alias' 'trap' 'termux-open-url' 'for' 'do' 'done' 'sleep' 'then' 'else' 'fi' 'builtin')
+    allowed_commands=('fesnuk' 'exit' 'clear' 'bantuan' 'anos' 'nano' 'echo' 'ubah ini menjadi rm' 'alias' 'trap' 'termux-open-url' 'for' 'do' 'done' 'sleep' 'then' 'else' 'fi' 'builtin')
     
     # Backup PATH
     PATH_BACKUP=$PATH
