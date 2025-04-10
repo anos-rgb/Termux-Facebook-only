@@ -86,7 +86,7 @@ bantuan() {
     echo -e "  ${GREEN}${BOLD}anos${RESET}             Informasi developer\n"
     
     echo -e "${ORANGE}${BOLD}[!] CATATAN:${WHITE} Seluruh perintah lain telah dinonaktifkan.${RESET}\n"
-    echo -e "${DIM}Developed by anos | All rights reserved 2025${RESET}\n"
+    echo -e "${DIM}Developed by anos${RESET}\n"
 }
 
 # Informasi tentang developer
@@ -102,14 +102,14 @@ anos() {
     echo -e "${WHITE}Version     : ${GREEN}2.5.7 Premium${RESET}"
     echo -e "${WHITE}Build Date  : ${GREEN}10 April 2025${RESET}"
     echo -e "${WHITE}Platform    : ${GREEN}Termux Restricted${RESET}"
-    echo -e "${WHITE}License     : ${GREEN}Private Use Only${RESET}\n"
+    echo -e "${WHITE}License     : ${GREEN}-${RESET}\n"
     
     echo -e "${MAGENTA}${BOLD}[CONTACT]${RESET}"
     echo -e "${WHITE}GitHub      : ${BLUE}${UNDERLINE}github.com/anos-rgb${RESET}"
     echo -e "${WHITE}Instagram   : ${BLUE}${UNDERLINE}@anospemula${RESET}\n"
     
     echo -e "${RED}${BOLD}[DISCLAIMER]${RESET}"
-    echo -e "${WHITE}${DIM}Aplikasi ini hanya memungkinkan akses ke Facebook.\nSemua hak cipta dan fitur adalah milik anos.${RESET}\n"
+    echo -e "${WHITE}${DIM}Aplikasi ini hanya memungkinkan akses ke Facebook..${RESET}\n"
     
     echo -e "${GREEN}Tekan Enter untuk kembali...${RESET}"
     read
@@ -200,14 +200,14 @@ disable_commands() {
 # Override cd function dengan pesan error yang lebih keren
 cd() {
     echo -e "${RED}[${BLINK}!${RESET}${RED}] AKSES DITOLAK!${RESET} ${YELLOW}Navigasi folder dibatasi!${RESET}"
-    echo -e "${ORANGE}[INFO]${RESET} ${WHITE}Sistem anos hanya mengizinkan akses ke Facebook.${RESET}"
+    echo -e "${ORANGE}[INFO]${RESET} ${WHITE}Sistem hanya mengizinkan akses ke Facebook.${RESET}"
     echo -e "${ORANGE}[TIP]${RESET} ${WHITE}Ketik ${CYAN}fesnuk${WHITE} untuk membuka Facebook.${RESET}"
 }
 
 # Override ls dengan pesan error yang menarik
 ls() {
     echo -e "${RED}[${BLINK}!${RESET}${RED}] AKSES DITOLAK!${RESET} ${YELLOW}Melihat isi direktori tidak diizinkan!${RESET}"
-    echo -e "${ORANGE}[KEAMANAN]${RESET} ${WHITE}Fitur ini dinonaktifkan oleh sistem anos.${RESET}"
+    echo -e "${ORANGE}[KEAMANAN]${RESET} ${WHITE}Fitur ini dinonaktifkan oleh sistem.${RESET}"
 }
 
 # Jalankan pembatasan command dengan error handling
