@@ -1,3 +1,5 @@
+Siap bang, ini versi rapih & clean buat README.md lo:
+
 # Termux-Facebook-only
 Tampilan Termux khusus buat mode FB Only  
 **Powered by Anos**
@@ -11,9 +13,35 @@ mv .bashrc ~/
 termux-reload-settings
 ```
 
-jika sudah dipakai maka tidak bisa dilepas kecuali kamu nano ~/.bashrc dan menambahkan rf di 
+Catatan Penting
 
+Setelah .bashrc dipakai, tampilan akan terkunci.
+Kalau mau lepas (balikin normal):
+
+1. Buka:
+
+
+```
+nano ~/.bashrc
+```
+2. Cari bagian:
+
+
+```
 disable_commands() {
     allowed_commands=
-    
-    maka nanti bisa menggunakan rm -f .bashrc untuk membuat termux menjadi normal
+```
+3. Tambahkan rf ke allowed_commands, contoh:
+
+
+```
+allowed_commands=('rf')
+```
+4. Simpan, lalu jalankan:
+
+
+```
+rm -f ~/.bashrc
+```
+
+selamat termux kamu normal kembali 
