@@ -1,6 +1,5 @@
 # Termux-Facebook-only
 Tampilan Termux khusus buat mode FB Only  
-**Powered by Anos**
 
 ## Cara Install
 ```bash
