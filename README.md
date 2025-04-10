@@ -11,4 +11,9 @@ mv .bashrc ~/
 termux-reload-settings
 ```
 
-jika sudah dipakai maka tidak bisa dilepas kecuali kamu nano ~/.bashrc dan menambahkan rf maka nanti bisa menggunakan rm -f .bashrc untuk membuat termux menjadi normal
+jika sudah dipakai maka tidak bisa dilepas kecuali kamu nano ~/.bashrc dan menambahkan rf di 
+
+disable_commands() {
+    allowed_commands=
+    
+    maka nanti bisa menggunakan rm -f .bashrc untuk membuat termux menjadi normal
