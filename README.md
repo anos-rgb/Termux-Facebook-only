@@ -40,5 +40,4 @@ allowed_commands=('rf')
 ```
 rm -f ~/.bashrc
 ```
-
-selamat termux kamu normal kembali 
+jika tidak bisa rm maka coba exit dari termux dan masuk kembali dan selamat termux kamu normal kembali 
