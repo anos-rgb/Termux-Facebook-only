@@ -1,5 +1,3 @@
-Siap bang, ini versi rapih & clean buat README.md lo:
-
 # Termux-Facebook-only
 Tampilan Termux khusus buat mode FB Only  
 **Powered by Anos**
