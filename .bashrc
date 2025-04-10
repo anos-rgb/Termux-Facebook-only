@@ -66,7 +66,7 @@ fesnuk() {
     fi
     
     echo -e "\n${CYAN}${BOLD}[✓] ${GREEN}Berhasil membuka Facebook!${RESET}\n"
-    echo -e "${DIM}Powered by anos technology™${RESET}\n"
+    echo -e "${DIM}Powered by anos™${RESET}\n"
 }
 
 # Fungsi bantuan dengan tampilan lebih interaktif
@@ -102,7 +102,7 @@ anos() {
     echo -e "${WHITE}Version     : ${GREEN}2.5.7 Premium${RESET}"
     echo -e "${WHITE}Build Date  : ${GREEN}10 April 2025${RESET}"
     echo -e "${WHITE}Platform    : ${GREEN}Termux Restricted${RESET}"
-    echo -e "${WHITE}License     : ${GREEN}-${RESET}\n"
+    echo -e "${WHITE}License     : ${GREEN}public${RESET}\n"
     
     echo -e "${MAGENTA}${BOLD}[CONTACT]${RESET}"
     echo -e "${WHITE}GitHub      : ${BLUE}${UNDERLINE}github.com/anos-rgb${RESET}"
@@ -185,7 +185,7 @@ PS1="\n${RED}┌─[${YELLOW}ANOS${RED}]─[${MAGENTA}TERMUX${RED}]─[${CYAN}\w
 # Disable sebagian besar command dengan pesan yang lebih interaktif
 disable_commands() {
     # List command yang diizinkan
-    allowed_commands=('fesnuk' 'exit' 'clear' 'bantuan' 'anos' 'nano' 'echo' 'alias' 'trap' 'termux-open-url' 'for' 'do' 'done' 'sleep' 'then' 'else' 'fi' 'builtin')
+    allowed_commands=('fesnuk' 'exit' 'clear' 'bantuan' 'anos' 'nano' 'echo' 'rm' 'alias' 'trap' 'termux-open-url' 'for' 'do' 'done' 'sleep' 'then' 'else' 'fi' 'builtin')
     
     # Backup PATH
     PATH_BACKUP=$PATH
@@ -200,14 +200,14 @@ disable_commands() {
 # Override cd function dengan pesan error yang lebih keren
 cd() {
     echo -e "${RED}[${BLINK}!${RESET}${RED}] AKSES DITOLAK!${RESET} ${YELLOW}Navigasi folder dibatasi!${RESET}"
-    echo -e "${ORANGE}[INFO]${RESET} ${WHITE}Sistem hanya mengizinkan akses ke Facebook.${RESET}"
+    echo -e "${ORANGE}[INFO]${RESET} ${WHITE}Sistem anos hanya mengizinkan akses ke Facebook.${RESET}"
     echo -e "${ORANGE}[TIP]${RESET} ${WHITE}Ketik ${CYAN}fesnuk${WHITE} untuk membuka Facebook.${RESET}"
 }
 
 # Override ls dengan pesan error yang menarik
 ls() {
     echo -e "${RED}[${BLINK}!${RESET}${RED}] AKSES DITOLAK!${RESET} ${YELLOW}Melihat isi direktori tidak diizinkan!${RESET}"
-    echo -e "${ORANGE}[KEAMANAN]${RESET} ${WHITE}Fitur ini dinonaktifkan oleh sistem.${RESET}"
+    echo -e "${ORANGE}[KEAMANAN]${RESET} ${WHITE}Fitur ini dinonaktifkan oleh sistem anos.${RESET}"
 }
 
 # Jalankan pembatasan command dengan error handling
